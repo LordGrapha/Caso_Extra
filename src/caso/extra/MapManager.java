@@ -44,4 +44,16 @@ public class MapManager extends Observable{
         return destino;
     }
     
+    public Nodo<Point> getUltiAgregado(){
+        return this.ultimoAgregado;
+    }
+    
+    public void anchuraDelGrafo(Nodo<Point> pPartida){
+        grafo.recorridoAnchura(pPartida);
+    }
+    
+    public void profundidadDelGrafo(Nodo<Point> pPartida){
+        grafo.recorridoProfundidad(pPartida);
+    }
+    
 }

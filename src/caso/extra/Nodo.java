@@ -56,6 +56,28 @@ public class Nodo <T>{
             listaArcos.add(pArco);
     }
 
+    public boolean isMark() {
+        return mark;
+    }
+
+    public void setMark(boolean mark) {
+        this.mark = mark;
+    }
+
+    public boolean isVisitado() {
+        return visitado;
+    }
+
+    public void setVisitado(boolean visitado) {
+        this.visitado = visitado;
+    }
+    
+    public ArrayList<Arco<T>> getListaArcos(){
+        return this.listaArcos;
+    }
+    
+    
+    
     @Override
     public String toString() {
         return "Nodo{" + "TValor=" + TValor + ", mark=" + mark + ", visitado=" + visitado + '}';
